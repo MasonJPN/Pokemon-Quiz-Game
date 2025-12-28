@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon Quiz</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <div class="container show">
+    <h4 id="result" class="header">Who's that Pokémon?</h4>
+
+    <img
+      id="pokemonImage"
+      alt="pokemon image"
+      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/132.svg"
+    >
+
+    <div id="options" class="options-container">
+      <!-- Buttons injected by JS -->
+    </div>
+
+    <h4 id="points">
+      Points:
+      <span id="pointValue">0</span> /
+      <span id="totalCount">0</span>
+    </h4>
+  </div>
+
+  <div id="loading-container" class="loading-container hide">
+    <img
+      id="loadingIcon"
+      src="images/loading_icon.gif"
+      alt="Loading"
+    >
+  </div>
+</body>
+</html>
